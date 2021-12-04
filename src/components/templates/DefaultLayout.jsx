@@ -1,5 +1,5 @@
-import { Footer } from "../layout/Footer";
-import { Header } from "../layout/Header";
+import { Header } from "../atoms/layout/Header";
+import { Footer } from "../atoms/layout/Footer";
 
 export const DefaltLayout = (props) => {
   const { children } = props;

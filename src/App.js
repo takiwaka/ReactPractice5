@@ -1,15 +1,14 @@
 import { BrowserRouter } from "react-router-dom";
 import { PrimaryButton } from "./components/atoms/button/PrimaryButton";
 import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
-import { DefaltLayout } from "./components/atoms/templates/DefaultLayout";
-import { HeaderOnly } from "./components/atoms/templates/HeaderOnly";
+import { DefaltLayout } from "./components/templates/DefaultLayout";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organism/user/UserCard";
 import "./styles.css";
 
 const user = {
   name: "takiwaka",
-  image: "https://source.unsplash.com/lqqpMXO_8Tc",
+  image: "https://source.unsplsash.com/lqqpMXO_8Tc",
   email: "123456@gmail.com",
   phone: "012-3456-7890",
   company: {
