@@ -4,6 +4,7 @@ import { SecondaryButton } from "./components/atoms/button/SecondaryButton";
 import { DefaltLayout } from "./components/templates/DefaultLayout";
 import { SearchInput } from "./components/molecules/SearchInput";
 import { UserCard } from "./components/organism/user/UserCard";
+import { Router } from "./router/Router";
 import "./styles.css";
 
 const user = {
@@ -18,15 +19,5 @@ const user = {
 };
 
 export default function App() {
-  return (
-    <BrowserRouter>
-      <DefaltLayout>
-        <PrimaryButton>テスト</PrimaryButton>
-        <SecondaryButton>検索</SecondaryButton>
-        <br />
-        <SearchInput />
-        <UserCard user={user} />
-      </DefaltLayout>
-    </BrowserRouter>
-  );
+  return <Router />;
 }
