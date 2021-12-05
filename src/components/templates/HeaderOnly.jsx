@@ -1,4 +1,4 @@
-import { Header } from "../layout/Header";
+import { Header } from "../atoms/layout/Header";
 
 export const HeaderOnly = (props) => {
   const { children } = props;
