@@ -1,11 +1,12 @@
-import { useContext } from "react";
+import { memo, useContext } from "react";
 import styled from "styled-components";
 import { UserContext } from "../../../providers/UserProvider";
 
-export const UserIconWidhName = (props) => {
-  const { image, name, isAdmin } = props;
-  const context = useContext(UserContext);
-  console.log(context);
+export const UserIconWidhName = memo((props) => {
+  const { image, name } = props;
+  const { userInfo } = useContext(UserContext);
+  const isAdmin = userInfo ? userInfo.isAdmin : false;
+
   return (
     <Scontainer>
       <SImg height={160} width={160} src={image} alt={name} />
@@ -13,7 +14,7 @@ export const UserIconWidhName = (props) => {
       {isAdmin && <SEdit>編集</SEdit>}
     </Scontainer>
   );
-};
+});
 
 const Scontainer = styled.div`
   text-align: center;
